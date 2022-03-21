@@ -9,7 +9,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     height: 100px;
-    background-color: grey;
+    background-color: black;
     font-family: sans-serif;
     grid-area: na;
 }
@@ -25,8 +25,9 @@ nav {
     right: 0px;
     width: 125px;
     align-items: center;
-    background-color: grey;
     transition: all 0.5s;
+    background-color: black;
+    
 }
 
 .nav-active {
@@ -40,15 +41,17 @@ nav {
 .nav-links a {
     text-decoration: none;
     letter-spacing: 0.1875rem;
-    color: black;
+    color: white;
     font-weight: bold;
     font-size: 1.25rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
 }
 
 .dropdown_menu div {
     width: 25px;
     height: 3px;
-    background-color: black;
+    background-color: grey;
     margin: 5px;
     border-radius: 10%;
     transition: all 0.5s;
@@ -77,7 +80,7 @@ nav {
 
     display: grid;
     grid-template-columns: minmax(300px, 1fr) 125px;
-    grid-template-rows: 100px 400px 400px 400px 100px;
+    grid-template-rows: 100px 400px 400px 400px 50px;
     grid-template-areas: 
     "he na"
     "s1 s1"
@@ -90,7 +93,11 @@ nav {
 #header {
 
 grid-area: he;
-background-color: green;
+background-color: black;
+display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
@@ -98,43 +105,74 @@ background-color: green;
 #section_1 {
 
     grid-area: s1;
-    background-image: url("../img/") /*Lägg till bild*/
+    background-image: url("../img/rocco-dipoppa-_uDj_lyPVpA-unsplash.jpg") 
     }
 
 #section_2 {
 
      grid-area: s2;
-     background-color: indigo;
+     background-color: black;
+     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column; 
+    border: 2px solid grey;
     }
 
 #section_3 {
 
     grid-area: s3;
-    background-color: rgb(214, 37, 120);
+    background-image: url("../img/redd-tkTAZM7m238-unsplash.jpg");
+    
 }
 
 
 
-    #footer {
+#footer {
 
-    grid-area: fo;
-    background-color: rgb(0, 255, 221);
-     }
+grid-area: fo;
+background-color: black;
+border: 2px solid grey;
+ }
 
-@media screen and (min-width: 800px) {
+
+h1  {
+
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 43px;
+
+}
+
+h2 {
+
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 31px;
+
+}
+
+#tour_dates {
+
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+
+}
+@media screen and (min-width: 1000px) {
     .dropdown_menu {
         display: none;
     }
 
     #grid_wrapper {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 100px 400px 400px 100px;
+        grid-template-rows: 100px 100px 400px 400px 50px;
         grid-template-areas: 
         "he he"
         "na na"
         "s1 s1"
         "s2 s3"
-        "fo fo"
+        "fo s3"
         ;
     }
 
@@ -146,6 +184,8 @@ background-color: green;
         right: 0px;
         width: 100%;
         position: relative;
+        border: 2px solid grey;
+    
     }
 
     nav {
@@ -159,5 +199,11 @@ background-color: green;
         transform: none;
     }
 
+
+    #header {
+
+        border: 2px solid grey;
+
+    }
 }
 
