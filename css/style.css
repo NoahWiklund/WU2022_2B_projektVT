@@ -90,6 +90,20 @@ nav {
     ;
 }
 
+#grid_wrapper_music {
+
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) 125px;
+    grid-template-rows: 100px minmax(400px, 1fr) 80px 900px 50px;
+    grid-template-areas: 
+    "he na"
+    "mg mg"
+    "mh mh"
+    "ma ma"
+    "fo fo"
+
+}
+
 #header {
 
 grid-area: he;
@@ -117,6 +131,7 @@ display: flex;
     align-items: center;
     flex-direction: column; 
     border: 2px solid grey;
+    padding: 8px;
     }
 
 #section_3 {
@@ -126,6 +141,39 @@ display: flex;
     
 }
 
+#music_general {
+
+
+    grid-area: mg;
+    background-image: url("../img/james-stamler-k3heD_KwH0A-unsplash.jpg");
+    display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-direction: column; 
+   border: 2px solid grey;
+   padding: 8px;
+
+}
+
+#music_headline {
+
+    grid-area: mh;
+    background-color: black;
+    display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-direction: column; 
+   border: 2px solid grey;
+
+    
+}
+
+#music_album {
+
+    grid-area: ma;
+    background-image: url("../img/album_cover.jpg");
+
+}
 
 
 #footer {
@@ -152,11 +200,25 @@ h2 {
 
 }
 
-#tour_dates {
+h3 {
+
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.information_text {
 
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
+    margin: 2%;
+
+}
+
+.footer_headline {
+
+    font-size: 15px;
 
 }
 @media screen and (min-width: 1000px) {
@@ -174,6 +236,21 @@ h2 {
         "s2 s3"
         "fo s3"
         ;
+    }
+
+    #grid_wrapper_music {
+
+        display: grid;
+        grid-template-columns: minmax(300px, 1fr) 125px;
+        grid-template-rows: 100px 100px minmax(400px, 1fr) 80px 900px 50px;
+        grid-template-areas: 
+        "he he"
+        "na na"
+        "mg mg"
+        "mh mh"
+        "ma ma"
+        "fo fo"
+    
     }
 
     .nav-links {
