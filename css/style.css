@@ -79,8 +79,8 @@ nav {
 #grid_wrapper {
 
     display: grid;
-    grid-template-columns: minmax(300px, 1fr) 125px;
-    grid-template-rows: 100px 400px 400px 400px 50px;
+    grid-template-columns: minmax(250px, 1fr) 125px;
+    grid-template-rows: 100px 400px minmax(400px, 1fr) 100px 50px;
     grid-template-areas: 
     "he na"
     "s1 s1"
@@ -93,7 +93,7 @@ nav {
 #grid_wrapper_music {
 
     display: grid;
-    grid-template-columns: minmax(300px, 1fr) 125px;
+    grid-template-columns: minmax(250px, 1fr) 125px;
     grid-template-rows: 100px minmax(400px, 1fr) 80px 900px 50px;
     grid-template-areas: 
     "he na"
@@ -107,8 +107,8 @@ nav {
 #grid_wrapper_news {
 
     display: grid;
-    grid-template-columns: minmax(300px, 1fr) 125px;
-    grid-template-rows: 100px minmax(100px, 1fr) 700px 50px;
+    grid-template-columns: minmax(250px, 1fr) 125px;
+    grid-template-rows: 100px minmax(100px, 400px) minmax(700px, 1fr) 50px;
     grid-template-areas: 
     "he na"
     "ng ng"
@@ -120,7 +120,7 @@ nav {
 #grid_wrapper_about {
 
     display: grid;
-    grid-template-columns: minmax(300px, 1fr) 125px;
+    grid-template-columns: minmax(250px, 1fr) 125px;
     grid-template-rows: 100px 400px 1fr 450px 50px;
     grid-template-areas: 
     "he na"
@@ -164,7 +164,7 @@ display: flex;
 #section_3 {
 
     grid-area: s3;
-    background-image: url("../img/redd-tkTAZM7m238-unsplash.jpg");
+    background-image: url("../img/logga.png");
     
 }
 
@@ -198,7 +198,7 @@ display: flex;
 #music_album {
 
     grid-area: ma;
-    background-image: url("../img/album_cover.jpg");
+    background-image: url("../img/album_cover_phone.png");
     background-size: cover;
 
 }
@@ -304,6 +304,13 @@ td {
     font-size: 15px;
 
 }
+
+.tickets :hover {
+
+cursor: pointer;
+
+}
+
 @media screen and (min-width: 1000px) {
     .dropdown_menu {
         display: none;
@@ -311,7 +318,7 @@ td {
 
     #grid_wrapper {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 100px 400px 400px 50px;
+        grid-template-rows: 100px 100px 400px minmax(500px, 1fr) 50px;
         grid-template-areas: 
         "he he"
         "na na"
@@ -390,6 +397,18 @@ td {
 
         border: 2px solid grey;
 
+    }
+
+    #section_3 {
+
+        background-image: url("../img/redd-tkTAZM7m238-unsplash.jpg");
+        
+    }
+
+    #music_album {
+
+        background-image: url("../img/album_cover.png");
+    
     }
 }
 
