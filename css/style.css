@@ -146,7 +146,8 @@ display: flex;
 #section_1 {
 
     grid-area: s1;
-    background-image: url("../img/rocco-dipoppa-_uDj_lyPVpA-unsplash.jpg") 
+    background-image: url("../img/rocco-dipoppa-_uDj_lyPVpA-unsplash.jpg");
+    background-size: cover;
     }
 
 #section_2 {
@@ -172,7 +173,7 @@ display: flex;
 
 
     grid-area: mg;
-    background-image: url("../img/james-stamler-k3heD_KwH0A-unsplash.jpg");
+    background-image: url("../img/john-matychuk-gUK3lA3K7Yo-unsplash.jpg");
     display: flex;
    justify-content: space-evenly;
    align-items: center;
@@ -224,7 +225,7 @@ display: flex;
 #about_headline_pic {
     grid-area: ap;
     background-image: url("../img/austin-wade-YZpuFugdy8Q-unsplash.jpg");
-    background-size: cover;
+    background-size: auto;
 }
 
 #about_side_pic {
@@ -249,12 +250,20 @@ background-color: black;
 border: 2px solid grey;
  }
 
+ #music_general_text {
+
+    margin-right: 10px;
+    margin-left: 10px;
+
+ }
+
 
 h1  {
 
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 43px;
+    margin-left: 10px;
 
 }
 
@@ -290,6 +299,13 @@ td {
     
 }
 
+li {
+
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
 .information_text {
 
     color: white;
@@ -298,6 +314,7 @@ td {
     margin: 2%;
 
 }
+
 
 .footer_headline {
 
@@ -410,5 +427,17 @@ cursor: pointer;
         background-image: url("../img/album_cover.png");
     
     }
+
+    #music_general_text {
+
+        margin-right: 30px;
+        margin-left: 30px;
+    
+     }
+
+     #about_headline_pic {
+        background-size: cover;
+    }
+    
 }
 
