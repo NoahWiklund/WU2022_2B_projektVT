@@ -80,7 +80,7 @@ nav {
 
     display: grid;
     grid-template-columns: minmax(250px, 1fr) 125px;
-    grid-template-rows: 100px 400px minmax(400px, 1fr) 100px 50px;
+    grid-template-rows: 100px 400px minmax(400px, 1fr) 100px 150px;
     grid-template-areas: 
     "he na"
     "s1 s1"
@@ -94,7 +94,7 @@ nav {
 
     display: grid;
     grid-template-columns: minmax(250px, 1fr) 125px;
-    grid-template-rows: 100px minmax(400px, 1fr) 80px 900px 50px;
+    grid-template-rows: 100px minmax(400px, 1fr) 80px 900px 150px;
     grid-template-areas: 
     "he na"
     "mg mg"
@@ -108,7 +108,7 @@ nav {
 
     display: grid;
     grid-template-columns: minmax(250px, 1fr) 125px;
-    grid-template-rows: 100px minmax(100px, 400px) minmax(700px, 1fr) 50px;
+    grid-template-rows: 100px minmax(100px, 400px) minmax(700px, 1fr) 150px;
     grid-template-areas: 
     "he na"
     "ng ng"
@@ -121,7 +121,7 @@ nav {
 
     display: grid;
     grid-template-columns: minmax(250px, 1fr) 125px;
-    grid-template-rows: 100px 400px 1fr 450px 50px;
+    grid-template-rows: 100px 400px 1fr 450px 150px;
     grid-template-areas: 
     "he na"
     "ap ap"
@@ -247,13 +247,46 @@ display: flex;
 
 grid-area: fo;
 background-color: black;
-border: 2px solid grey;
- }
+border-top: 2px solid grey;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-direction: column; 
+
+}
+
 
  #music_general_text {
 
     margin-right: 10px;
     margin-left: 10px;
+    background-color: rgba(2, 2, 2, 0.6);
+    border-radius: 3px;
+    
+
+ }
+
+ #music_h2 {
+
+    text-decoration: underline;
+    background-color: rgba(2, 2, 2, 0.6);
+    border-radius: 3px;
+ }
+
+ #music_ul {
+
+    background-color: rgba(2, 2, 2, 0.6);
+    border-radius: 3px;
+
+
+ }
+
+ .underrubrik {
+
+    text-decoration: underline;
+    color: silver;
+    background-color: rgba(2, 2, 2, 0.6);
+    border-radius: 3px;
 
  }
 
@@ -296,13 +329,22 @@ td {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     text-align: center;
+    padding: 2px;
     
 }
+
+
 
 li {
 
     margin-right: 10px;
     margin-left: 10px;
+
+}
+
+p {
+
+color: white;
 
 }
 
@@ -316,17 +358,20 @@ li {
 }
 
 
-.footer_headline {
-
-    font-size: 15px;
-
-}
 
 .tickets :hover {
 
 cursor: pointer;
 
 }
+
+.footer_information {
+
+font-size: 11px;
+padding-left: 0px;
+padding-right: 0px;
+}
+    
 
 @media screen and (min-width: 1000px) {
     .dropdown_menu {
@@ -335,13 +380,14 @@ cursor: pointer;
 
     #grid_wrapper {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 100px 400px minmax(500px, 1fr) 50px;
+        grid-template-rows: 100px 100px 400px minmax(350px, 1fr) 200px;
         grid-template-areas: 
         "he he"
         "na na"
         "s1 s1"
         "s2 s3"
-        "fo s3"
+        "s2 s3"
+        "fo fo"
         ;
     }
 
@@ -349,7 +395,7 @@ cursor: pointer;
 
         display: grid;
         grid-template-columns: minmax(300px, 1fr) 125px;
-        grid-template-rows: 100px 100px minmax(400px, 1fr) 80px 900px 50px;
+        grid-template-rows: 100px 100px minmax(400px, 1fr) 80px 900px 200px;
         grid-template-areas: 
         "he he"
         "na na"
@@ -364,7 +410,7 @@ cursor: pointer;
 
         display: grid;
         grid-template-columns: minmax(300px, 1fr) 125px;
-        grid-template-rows: 100px 100px minmax(100px, 1fr) 700px 50px;
+        grid-template-rows: 100px 100px minmax(100px, 1fr) 700px 200px;
         grid-template-areas: 
         "he he"
         "na na"
@@ -376,7 +422,7 @@ cursor: pointer;
 
     #grid_wrapper_about {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 100px 400px 400px 50px;
+        grid-template-rows: 100px 100px 400px 400px 200px;
         grid-template-areas: 
         "he he"
         "na na"
@@ -438,6 +484,13 @@ cursor: pointer;
      #about_headline_pic {
         background-size: cover;
     }
+
+    .footer_information {
+
+        font-size: 14px;
+        padding-left: 80px;
+        padding-right: 80px;
+        }
     
 }
 
